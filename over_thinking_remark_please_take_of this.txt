@@ -1,0 +1,21 @@
+n_pos_int,tar,res,indx_val = [],67,[],0
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    n_pos_int.extend(map(int,input().split()))
+    for _ in range(len(n_pos_int)):
+        loc_x = n_pos_int[_]
+        for _ in range(len(n_pos_int)):
+            if loc_x * n_pos_int[_] == tar:
+                res.append("yes")
+                indx_val = _
+    # n_pos_int.clear()
+    if res[_] == "yes":
+        pass
+    else:
+        res.append("no")
+for _ in range(t):
+    print(res[_])    
+
+
+    OVER THINKED ALOT FOR A BASIC SIMPLE LOGIC QUESTION ANYWAYS U LEARNED CONGO BRUH!!!
